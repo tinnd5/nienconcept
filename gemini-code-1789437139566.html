@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>niên.concept | Handcrafted Ceramics & Accessories</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,600;1,400&family=Plus+Jakarta+Sans:wght@300;400;500&display=swap" rel="stylesheet">
+    
+    <style>
+        :root {
+            --bg-color: #F9F7F2;
+            --text-main: #2C2A29;
+            --text-muted: #76716B;
+            --accent-earth: #A66E4E;
+            --card-bg: #FFFFFF;
+            --border-color: #E6E2D8;
+        }
+
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            background-color: var(--bg-color);
+            color: var(--text-main);
+            font-family: 'Plus Jakarta Sans', sans-serif;
+            line-height: 1.6;
+            padding: 0 20px;
+        }
+
+        header {
+            max-width: 1000px;
+            margin: 0 auto;
+            padding: 40px 0 20px;
+            text-align: center;
+            border-bottom: 1px solid var(--border-color);
+        }
+
+        .brand-title {
+            font-family: 'Cormorant Garamond', serif;
+            font-size: 2.8rem;
+            font-weight: 600;
+            letter-spacing: -0.5px;
+            color: var(--text-main);
+        }
+
+        .brand-subtitle {
+            font-size: 0.9rem;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+            color: var(--text-muted);
+            margin-top: 5px;
+        }
+
+        .container {
+            max-width: 1000px;
+            margin: 0 auto;
+            padding: 40px 0;
+        }
+
+        .story-section {
+            text-align: center;
+            max-width: 680px;
+            margin: 0 auto 60px;
+        }
+
+        .story-title {
+            font-family: 'Cormorant Garamond', serif;
+            font-size: 1.8rem;
+            margin-bottom: 15px;
+            font-style: italic;
+        }
+
+        .story-text {
+            color: var(--text-muted);
+            font-size: 0.98rem;
+        }
+
+        .grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 30px;
+        }
+
+        .card {
+            background: var(--card-bg);
+            border: 1px solid var(--border-color);
+            border-radius: 4px;
+            overflow: hidden;
+            transition: transform 0.3s ease;
+        }
+
+        .card:hover {
+            transform: translateY(-4px);
+        }
+
+        .card-img {
+            width: 100%;
+            height: 320px;
+            object-fit: cover;
+            background-color: #EEECE6;
+        }
+
+        .card-body {
+            padding: 20px;
+        }
+
+        .card-tag {
+            font-size: 0.75rem;
+            text-transform: uppercase;
+            letter-spacing: 1.5px;
+            color: var(--accent-earth);
+            font-weight: 500;
+        }
+
+        .card-title {
+            font-family: 'Cormorant Garamond', serif;
+            font-size: 1.4rem;
+            margin: 5px 0 10px;
+        }
+
+        .card-desc {
+            font-size: 0.88rem;
+            color: var(--text-muted);
+            margin-bottom: 15px;
+        }
+
+        .card-footer {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            border-top: 1px solid var(--border-color);
+            padding-top: 12px;
+        }
+
+        .price {
+            font-weight: 500;
+            font-size: 0.95rem;
+        }
+
+        .btn-order {
+            display: inline-block;
+            background-color: var(--text-main);
+            color: #FFF;
+            padding: 8px 16px;
+            text-decoration: none;
+            font-size: 0.82rem;
+            letter-spacing: 1px;
+            text-transform: uppercase;
+            border-radius: 2px;
+        }
+
+        footer {
+            max-width: 1000px;
+            margin: 40px auto 0;
+            padding: 30px 0;
+            border-top: 1px solid var(--border-color);
+            text-align: center;
+            color: var(--text-muted);
+            font-size: 0.85rem;
+        }
+
+        .social-links a {
+            color: var(--text-main);
+            text-decoration: none;
+            margin: 0 10px;
+            font-weight: 500;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1 class="brand-title">niên.concept</h1>
+        <p class="brand-subtitle">Handcrafted Ceramics & Artisanal Goods</p>
+    </header>
+
+    <div class="container">
+        
+        <section class="story-section">
+            <h2 class="story-title">Crafted with patience, aged with grace.</h2>
+            <p class="story-text">
+                Chào mừng bạn đến với <strong>niên.concept</strong> — không gian của những món gốm mộc mạc và phụ kiện thủ công làm theo mẻ nhỏ (small-batch). Mỗi sản phẩm đều mang dấu ấn thời gian và sự tỉ mỉ trong từng công đoạn chế tác.
+            </p>
+        </section>
+
+        <div class="grid">
+            
+            <!-- Product 1 -->
+            <div class="card">
+                <img src="https://images.unsplash.com/photo-1578749556568-bc2c40e68b61?auto=format&fit=crop&w=600&q=80" alt="Ceramic Mug" class="card-img">
+                <div class="card-body">
+                    <span class="card-tag">Ceramics</span>
+                    <h3 class="card-title">Mộc Cup — Handcrafted Mug</h3>
+                    <p class="card-desc">Cốc gốm vuốt tay, sử dụng men thực phẩm an toàn (Food-safe), cảm giác mộc mạc khi cầm nắm.</p>
+                    <div class="card-footer">
+                        <span class="price">350.000 VND</span>
+                        <a href="https://instagram.com" target="_blank" class="btn-order">Đặt hàng</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Product 2 -->
+            <div class="card">
+                <img src="https://images.unsplash.com/photo-1610701596007-11502861dcfa?auto=format&fit=crop&w=600&q=80" alt="Ceramic Plate" class="card-img">
+                <div class="card-body">
+                    <span class="card-tag">Ceramics</span>
+                    <h3 class="card-title">Hạt Plate — Dessert Dish</h3>
+                    <p class="card-desc">Đĩa gốm nhỏ thích hợp cho bánh ngọt hoặc phụ kiện, tạo hình thủ công độc bản.</p>
+                    <div class="card-footer">
+                        <span class="price">280.000 VND</span>
+                        <a href="https://instagram.com" target="_blank" class="btn-order">Đặt hàng</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Product 3 -->
+            <div class="card">
+                <img src="https://images.unsplash.com/photo-1535632066927-ab7c9ab60908?auto=format&fit=crop&w=600&q=80" alt="Handcrafted Accessory" class="card-img">
+                <div class="card-body">
+                    <span class="card-tag">Accessories</span>
+                    <h3 class="card-title">Niên Pin — Custom Metal Pin</h3>
+                    <p class="card-desc">Phụ kiện đính kèm hoàn thiện thủ công, tỉ mỉ từng chi tiết dành cho trang phục vintage/heritage.</p>
+                    <div class="card-footer">
+                        <span class="price">190.000 VND</span>
+                        <a href="https://instagram.com" target="_blank" class="btn-order">Đặt hàng</a>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+    </div>
+
+    <footer>
+        <p class="social-links">
+            <a href="https://instagram.com" target="_blank">Instagram</a> • 
+            <a href="https://facebook.com" target="_blank">Facebook</a>
+        </p>
+        <p style="margin-top: 10px;">&copy; 2026 niên.concept. All rights reserved.</p>
+    </footer>
+
+</body>
+</html>
