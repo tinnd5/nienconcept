@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>niên.concept | Handcrafted Ceramics & Accessories</title>
+    <title>niên.concept | Handcrafted Ceramics & Artisanal Goods</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,600;1,400&family=Plus+Jakarta+Sans:wght@300;400;500&display=swap" rel="stylesheet">
@@ -65,7 +65,7 @@
         .story-section {
             text-align: center;
             max-width: 680px;
-            margin: 0 auto 60px;
+            margin: 0 auto 50px;
         }
 
         .story-title {
@@ -82,8 +82,8 @@
 
         .grid {
             display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-            gap: 30px;
+            grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+            gap: 25px;
         }
 
         .card {
@@ -92,6 +92,8 @@
             border-radius: 4px;
             overflow: hidden;
             transition: transform 0.3s ease;
+            display: flex;
+            flex-direction: column;
         }
 
         .card:hover {
@@ -100,13 +102,16 @@
 
         .card-img {
             width: 100%;
-            height: 320px;
+            height: 280px;
             object-fit: cover;
             background-color: #EEECE6;
         }
 
         .card-body {
             padding: 20px;
+            display: flex;
+            flex-direction: column;
+            flex-grow: 1;
         }
 
         .card-tag {
@@ -119,39 +124,40 @@
 
         .card-title {
             font-family: 'Cormorant Garamond', serif;
-            font-size: 1.4rem;
-            margin: 5px 0 10px;
+            font-size: 1.35rem;
+            margin: 5px 0 8px;
         }
 
         .card-desc {
             font-size: 0.88rem;
             color: var(--text-muted);
             margin-bottom: 15px;
+            flex-grow: 1;
         }
 
         .card-footer {
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
             border-top: 1px solid var(--border-color);
-            padding-top: 12px;
-        }
-
-        .price {
-            font-weight: 500;
-            font-size: 0.95rem;
+            padding-top: 15px;
+            text-align: right;
         }
 
         .btn-order {
-            display: inline-block;
+            display: block;
+            width: 100%;
+            text-align: center;
             background-color: var(--text-main);
             color: #FFF;
-            padding: 8px 16px;
+            padding: 10px 16px;
             text-decoration: none;
             font-size: 0.82rem;
             letter-spacing: 1px;
             text-transform: uppercase;
             border-radius: 2px;
+            transition: background-color 0.2s ease;
+        }
+
+        .btn-order:hover {
+            background-color: var(--accent-earth);
         }
 
         footer {
@@ -170,6 +176,10 @@
             margin: 0 10px;
             font-weight: 500;
         }
+        
+        .social-links a:hover {
+            color: var(--accent-earth);
+        }
     </style>
 </head>
 <body>
@@ -184,50 +194,125 @@
         <section class="story-section">
             <h2 class="story-title">Crafted with patience, aged with grace.</h2>
             <p class="story-text">
-                Chào mừng bạn đến với <strong>niên.concept</strong> — không gian của những món gốm mộc mạc và phụ kiện thủ công làm theo mẻ nhỏ (small-batch). Mỗi sản phẩm đều mang dấu ấn thời gian và sự tỉ mỉ trong từng công đoạn chế tác.
+                Chào mừng bạn đến với <strong>niên.concept</strong> — không gian của những món gốm mộc mạc và phụ kiện thủ công chế tác theo mẻ nhỏ (small-batch). Mỗi sản phẩm đều mang dấu ấn độc bản và sự tỉ mỉ trong từng công đoạn.
             </p>
         </section>
 
         <div class="grid">
             
-            <!-- Product 1 -->
+            <!-- 1. Ly Méo -->
             <div class="card">
-                <img src="https://images.unsplash.com/photo-1578749556568-bc2c40e68b61?auto=format&fit=crop&w=600&q=80" alt="Ceramic Mug" class="card-img">
+                <img src="https://images.unsplash.com/photo-1578749556568-bc2c40e68b61?auto=format&fit=crop&w=600&q=80" alt="Ly Méo" class="card-img">
                 <div class="card-body">
                     <span class="card-tag">Ceramics</span>
-                    <h3 class="card-title">Mộc Cup — Handcrafted Mug</h3>
-                    <p class="card-desc">Cốc gốm vuốt tay, sử dụng men thực phẩm an toàn (Food-safe), cảm giác mộc mạc khi cầm nắm.</p>
+                    <h3 class="card-title">Ly Méo</h3>
+                    <p class="card-desc">Tạo hình méo tự nhiên vuốt tay thủ công, dáng mộc mạc độc bản, men thực phẩm an toàn.</p>
                     <div class="card-footer">
-                        <span class="price">350.000 VND</span>
-                        <a href="https://instagram.com" target="_blank" class="btn-order">Đặt hàng</a>
+                        <a href="https://www.instagram.com/nien.concept" target="_blank" class="btn-order">Liên hệ báo giá</a>
                     </div>
                 </div>
             </div>
 
-            <!-- Product 2 -->
+            <!-- 2. Bát Chawan -->
             <div class="card">
-                <img src="https://images.unsplash.com/photo-1610701596007-11502861dcfa?auto=format&fit=crop&w=600&q=80" alt="Ceramic Plate" class="card-img">
+                <img src="https://images.unsplash.com/photo-1576020688413-eac95d40030e?auto=format&fit=crop&w=600&q=80" alt="Bát Chawan" class="card-img">
                 <div class="card-body">
                     <span class="card-tag">Ceramics</span>
-                    <h3 class="card-title">Hạt Plate — Dessert Dish</h3>
-                    <p class="card-desc">Đĩa gốm nhỏ thích hợp cho bánh ngọt hoặc phụ kiện, tạo hình thủ công độc bản.</p>
+                    <h3 class="card-title">Bát Chawan</h3>
+                    <p class="card-desc">Bát trà đạo phong cách truyền thống, đất nung mộc mạc giữ nhiệt tốt.</p>
                     <div class="card-footer">
-                        <span class="price">280.000 VND</span>
-                        <a href="https://instagram.com" target="_blank" class="btn-order">Đặt hàng</a>
+                        <a href="https://www.instagram.com/nien.concept" target="_blank" class="btn-order">Liên hệ báo giá</a>
                     </div>
                 </div>
             </div>
 
-            <!-- Product 3 -->
+            <!-- 3. Nam châm (Magnet) -->
             <div class="card">
-                <img src="https://images.unsplash.com/photo-1535632066927-ab7c9ab60908?auto=format&fit=crop&w=600&q=80" alt="Handcrafted Accessory" class="card-img">
+                <img src="https://images.unsplash.com/photo-1535632066927-ab7c9ab60908?auto=format&fit=crop&w=600&q=80" alt="Nam châm Magnet" class="card-img">
                 <div class="card-body">
                     <span class="card-tag">Accessories</span>
-                    <h3 class="card-title">Niên Pin — Custom Metal Pin</h3>
-                    <p class="card-desc">Phụ kiện đính kèm hoàn thiện thủ công, tỉ mỉ từng chi tiết dành cho trang phục vintage/heritage.</p>
+                    <h3 class="card-title">Nam châm (Magnet)</h3>
+                    <p class="card-desc">Nam châm gốm đính tủ lạnh / bảng ghi chú thủ công nhỏ gọn, tinh tế.</p>
                     <div class="card-footer">
-                        <span class="price">190.000 VND</span>
-                        <a href="https://instagram.com" target="_blank" class="btn-order">Đặt hàng</a>
+                        <a href="https://www.instagram.com/nien.concept" target="_blank" class="btn-order">Liên hệ báo giá</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- 4. Ghin Cài (Pin) -->
+            <div class="card">
+                <img src="https://images.unsplash.com/photo-1590736704728-f4730bb30770?auto=format&fit=crop&w=600&q=80" alt="Ghin Cài Pin" class="card-img">
+                <div class="card-body">
+                    <span class="card-tag">Accessories</span>
+                    <h3 class="card-title">Ghin Cài (Pin)</h3>
+                    <p class="card-desc">Pin cài áo/balô chế tác thủ công tỉ mỉ, thích hợp cho trang phục vintage/workwear.</p>
+                    <div class="card-footer">
+                        <a href="https://www.instagram.com/nien.concept" target="_blank" class="btn-order">Liên hệ báo giá</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- 5. Móc Khóa (Keychain) -->
+            <div class="card">
+                <img src="https://images.unsplash.com/photo-1584917865442-de89df76afd3?auto=format&fit=crop&w=600&q=80" alt="Móc Khóa Keychain" class="card-img">
+                <div class="card-body">
+                    <span class="card-tag">Accessories</span>
+                    <h3 class="card-title">Móc Khóa (Keychain)</h3>
+                    <p class="card-desc">Móc khóa thủ công mang dấu ấn riêng biệt của niên.concept.</p>
+                    <div class="card-footer">
+                        <a href="https://www.instagram.com/nien.concept" target="_blank" class="btn-order">Liên hệ báo giá</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- 6. Ly mug nhỏ -->
+            <div class="card">
+                <img src="https://images.unsplash.com/photo-1514432324607-a09d9b4aefdd?auto=format&fit=crop&w=600&q=80" alt="Ly mug nhỏ" class="card-img">
+                <div class="card-body">
+                    <span class="card-tag">Ceramics</span>
+                    <h3 class="card-title">Ly Mug Nhỏ</h3>
+                    <p class="card-desc">Ly gốm dung tích vừa cho espresso hoặc trà, quai cầm chắc chắn.</p>
+                    <div class="card-footer">
+                        <a href="https://www.instagram.com/nien.concept" target="_blank" class="btn-order">Liên hệ báo giá</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- 7. Gạt tàn -->
+            <div class="card">
+                <img src="https://images.unsplash.com/photo-1578749556568-bc2c40e68b61?auto=format&fit=crop&w=600&q=80" alt="Gạt tàn gốm" class="card-img">
+                <div class="card-body">
+                    <span class="card-tag">Ceramics</span>
+                    <h3 class="card-title">Gạt Tàn Gốm</h3>
+                    <p class="card-desc">Thiết kế tối giản, men gốm chịu nhiệt tốt, dễ dàng làm sạch.</p>
+                    <div class="card-footer">
+                        <a href="https://www.instagram.com/nien.concept" target="_blank" class="btn-order">Liên hệ báo giá</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- 8. Lót ly tròn -->
+            <div class="card">
+                <img src="https://images.unsplash.com/photo-1610701596007-11502861dcfa?auto=format&fit=crop&w=600&q=80" alt="Lót lý tròn" class="card-img">
+                <div class="card-body">
+                    <span class="card-tag">Ceramics</span>
+                    <h3 class="card-title">Lót Ly Tròn</h3>
+                    <p class="card-desc">Miếng lót ly bằng gốm hút nước tốt, bề mặt mộc mạc trang nhã.</p>
+                    <div class="card-footer">
+                        <a href="https://www.instagram.com/nien.concept" target="_blank" class="btn-order">Liên hệ báo giá</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- 9. Ly capu -->
+            <div class="card">
+                <img src="https://images.unsplash.com/photo-1572119865084-43c285814d70?auto=format&fit=crop&w=600&q=80" alt="Ly capu" class="card-img">
+                <div class="card-body">
+                    <span class="card-tag">Ceramics</span>
+                    <h3 class="card-title">Ly Capu</h3>
+                    <p class="card-desc">Ly gốm chuyên dụng cho Cappuccino / Latte, miệng rộng tiện cho việc rót milk foam.</p>
+                    <div class="card-footer">
+                        <a href="https://www.instagram.com/nien.concept" target="_blank" class="btn-order">Liên hệ báo giá</a>
                     </div>
                 </div>
             </div>
@@ -238,8 +323,8 @@
 
     <footer>
         <p class="social-links">
-            <a href="https://instagram.com" target="_blank">Instagram</a> • 
-            <a href="https://facebook.com" target="_blank">Facebook</a>
+            <a href="https://www.instagram.com/nien.concept" target="_blank">Instagram (@nien.concept)</a> • 
+            <a href="https://www.facebook.com/share/1F12vLdpnY/" target="_blank">Facebook</a>
         </p>
         <p style="margin-top: 10px;">&copy; 2026 niên.concept. All rights reserved.</p>
     </footer>
